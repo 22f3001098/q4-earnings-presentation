@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q4 Earnings Report</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/monokai.min.css">
+    <style>
+        .reveal h1, .reveal h2, .reveal h3 { text-transform: none; }
+        .reveal pre { width: 100%; }
+        .equation { font-size: 1.5em; color: #42affa; }
+        .contact-email { color: #90ee90; font-size: 1.2em; }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+
+            <!-- Slide 1: Title -->
+            <section>
+                <h1>Q4 Quarterly Earnings Report</h1>
+                <h3>Financial Performance & Strategic Outlook</h3>
+                <p style="margin-top: 50px;">November 2025</p>
+            </section>
+
+            <!-- Slide 2: Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    - Revenue Growth: **+15%** YoY
+                    - Net Profit: **+10%** YoY
+                    - Market Share: **Expanded by 2%**
+                    
+                    ---
+                    
+                    ### Key Drivers
+                    
+                    * Digital Transformation Initiative
+                    * Cost Optimization Program
+                    * Emerging Markets Expansion
+                </textarea>
+            </section>
+
+            <!-- Slide 3: Animated Fragments -->
+            <section>
+                <h2>Financial Highlights</h2>
+                <ul>
+                    <li class="fragment">💰 Total Revenue: $2.5B</li>
+                    <li class="fragment">📈 Operating Margin: 18%</li>
+                    <li class="fragment">✅ Net Income: $380M</li>
+                    <li class="fragment">🎯 EPS: $3.80</li>
+                </ul>
+                <aside class="notes">
+                    Emphasize consistent growth across all business segments. 
+                    Operating margin improved due to efficiency initiatives.
+                </aside>
+            </section>
+
+            <!-- Slide 4: Mathematical Equations -->
+            <section>
+                <h2>Key Financial Formulas</h2>
+                <p class="equation">
+                    \[
+                    \text{Net Income Margin} = \frac{\text{Net Income}}{\text{Revenue}} \times 100\%
+                    \]
+                </p>
+                <p style="margin-top: 40px;">For Q4: (380M / 2500M) × 100% = <strong style="color: #42affa;">15.2%</strong></p>
+                
+                <p class="equation" style="margin-top: 50px;">
+                    \[
+                    \text{EPS} = \frac{\text{Net Income}}{\text{Shares Outstanding}}
+                    \]
+                </p>
+                <p>Q4 EPS: 380M / 100M shares = <strong style="color: #42affa;">$3.80</strong></p>
+                
+                <aside class="notes">
+                    These formulas show how we calculated key metrics. 
+                    The margin improvement reflects operational efficiency.
+                </aside>
+            </section>
+
+            <!-- Slide 5: Code Sample -->
+            <section>
+                <h2>Earnings Calculation (Python)</h2>
+                <pre><code class="language-python" data-trim data-noescape>
+# Q4 Financial Metrics Calculation
+revenue_q4 = 2_500_000_000  # $2.5B
+net_income_q4 = 380_000_000  # $380M
+shares_outstanding = 100_000_000
+
+# Calculate Key Metrics
+net_margin = (net_income_q4 / revenue_q4) * 100
+eps = net_income_q4 / shares_outstanding
+
+print(f"Net Margin: {net_margin:.2f}%")
+print(f"EPS: ${eps:.2f}")
+
+# Output:
+# Net Margin: 15.20%
+# EPS: $3.80
+                </code></pre>
+                <aside class="notes">
+                    This Python script demonstrates how we automated 
+                    financial calculations for quarterly reporting.
+                </aside>
+            </section>
+
+            <!-- Slide 6: Contact & Email -->
+            <section>
+                <h2>Contact Information</h2>
+                <p class="contact-email">📧 22f3001098@ds.study.iitm.ac.in</p>
+                <p style="margin-top: 40px; color: #888;">Questions & Follow-up Discussion</p>
+                <aside class="notes">
+                    Contact for any detailed questions about methodology 
+                    or deeper financial analysis.
+                </aside>
+            </section>
+
+            <!-- Slide 7: Thank You -->
+            <section>
+                <h1>Thank You</h1>
+                <p>Q4 2025 Earnings Presentation</p>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- RevealJS & Plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/markdown/markdown.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/highlight/highlight.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/plugin/notes/notes.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+            mathjax2: { config: 'TeX-AMS_HTML-full' }
+        });
+    </script>
+</body>
+</html>
